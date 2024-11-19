@@ -1,0 +1,106 @@
+/* Container for all products (grid) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Exactly 4 product cards per row */
+  gap: 1.5rem;
+}
+
+/* Container for individual product cards */
+.product-card {
+  background: #fff;
+  padding: 1rem; /* Padding for the card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 220px; /* Fixed width for consistent card size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 0; /* Remove left padding so content starts directly from the left */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Center the product image */
+.product-image {
+  display: block;
+  margin: 2px 8px 8px; 
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Product details styling */
+.product-title {
+  font-size: 1.2rem;
+  text-align: left; /* Align text to the left */
+  word-wrap: break-word; /* Allows long names to wrap onto the next line */
+  white-space: normal; /* Enables multi-line display */
+  margin-bottom: 0.5rem;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+  text-align: left; /* Align text to the left */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  text-align: left; /* Align price text to the left */
+}
+
+/* Container for buttons */
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+/* Styles for both buttons */
+.add-to-cart, .view-details {
+  width: 100%; /* Full width of the card */
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center; /* Center the text */
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.add-to-cart:hover, .view-details:hover {
+  background-color: #555;
+}
+
+.add-to-cart {
+  background-color: #28a745; /* Green for Add to Cart */
+}
+
+.add-to-cart:hover {
+  background-color: #218838;
+}
+
+.view-details {
+  background-color: #007bff; /* Blue for View Details */
+}
+
+.view-details:hover {
+  background-color: #0056b3;
+}

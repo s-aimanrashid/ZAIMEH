@@ -1,0 +1,53 @@
+/* src/styles/Footer.css */
+
+.footer {
+  background-color: rgb(90, 90, 90);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons {
+  margin-top: 1rem;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .footer .social-icons a {
+    font-size: 1.2rem;
+  }
+}

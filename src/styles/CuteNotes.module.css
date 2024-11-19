@@ -1,0 +1,155 @@
+.notesContainer {
+  position: relative;
+  width: 100%;
+  min-height: 500px; /* Ensures enough space */
+  margin: 40px 0;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.quoteOfTheDay {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #11004d;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.quoteOfTheDay p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Circular container for fashion words */
+.fashionCircle {
+  position: absolute;
+  width: 500px; /* Adjust size to fit all 14 words */
+  height: 500px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+
+/* Styling for the fashion words placed in circular positions */
+.fashionWord {
+  position: absolute;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* Position words in a circle around the center */
+.fashionWord:nth-child(1) {
+  font-size: 2rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fashionWord:nth-child(2) {
+  font-size: 2.2rem;
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.fashionWord:nth-child(3) {
+  font-size: 2.5rem;
+  top: 25%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.fashionWord:nth-child(4) {
+  font-size: 2rem;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+
+.fashionWord:nth-child(5) {
+  font-size: 3rem;
+  top: 70%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.fashionWord:nth-child(6) {
+  font-size: 2.8rem;
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.fashionWord:nth-child(7) {
+  font-size: 2rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fashionWord:nth-child(8) {
+  font-size: 2.5rem;
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.fashionWord:nth-child(9) {
+  font-size: 2.8rem;
+  top: 70%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.fashionWord:nth-child(10) {
+  font-size: 3rem;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+
+.fashionWord:nth-child(11) {
+  font-size: 2.2rem;
+  top: 25%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.fashionWord:nth-child(12) {
+  font-size: 2.5rem;
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.fashionWord:nth-child(13) {
+  font-size: 2.8rem;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fashionWord:nth-child(14) {
+  font-size: 2rem;
+  top: 25%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hover effect */
+.fashionWord:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  color: #007BFF;
+}
